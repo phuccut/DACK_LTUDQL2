@@ -1,0 +1,52 @@
+﻿<Window x:Class="QuanLyBanHang.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyBanHang"
+        mc:Ignorable="d"
+        Title="Login" Height="300" Width="500" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel>
+            <StackPanel Background="#FF95D5EE" Height="50">
+                <TextBlock FontFamily="Arial" FontSize="30" HorizontalAlignment="Center" Margin="7" FontWeight="Bold">Thông tin đăng nhập</TextBlock>
+            </StackPanel>
+            <Grid Margin="0 40 0 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Grid.Column="0" Margin="5" >
+                    <TextBlock FontFamily="Arial" FontSize="22" Width="200" TextAlignment="Right">Tên đăng nhập:</TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="1" Margin="5">
+                    <TextBox Name="txtUsername" Width="250" Height="30"/>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="0" Margin="5" >
+                    <TextBlock FontFamily="Arial" FontSize="22" Width="200" TextAlignment="Right">Mật khẩu:</TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="1" Margin="5">
+                    <PasswordBox Name="txtPassword" Width="250" Height="30"/>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Margin="5">
+                    <Button Name="btnDangNhap" Height="30" Click="btnDangNhap_Click" IsDefault="true" Margin="106,0">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF6A7F93" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                                <GradientStop Color="#FF6CA2AE" Offset="0.309"/>
+                                <GradientStop Color="#FFE0DFE4" Offset="0.735"/>
+                            </LinearGradientBrush>
+                        </Button.Background> Đăng nhập
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+
+    </Grid>
+</Window>

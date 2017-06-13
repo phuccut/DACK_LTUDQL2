@@ -1,0 +1,16 @@
+F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojResolveAssemblyReference.cache
+F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\obj\Debug\Login.g.cs
+F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\obj\Debug\MainWindow.g.cs
+F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\obj\Debug\App.g.cs
+F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang_MarkupCompile.cache
+F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang_MarkupCompile.lref
+F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\obj\Debug\Login.baml
+F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\obj\Debug\MainWindow.baml
+F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.g.resources
+F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.Cache
+F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
