@@ -24,5 +24,10 @@ namespace QuanLyBanHang
         {
             InitializeComponent();
         }
+
+        private void button_Copy1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

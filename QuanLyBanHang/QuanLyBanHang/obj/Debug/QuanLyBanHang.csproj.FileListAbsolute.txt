@@ -14,3 +14,4 @@ F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Proper
 F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.Cache
 F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
 F:\Study\LTUDQL2\DACK\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
