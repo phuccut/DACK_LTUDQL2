@@ -78,6 +78,12 @@ namespace DTO
     partial void InsertVaiTro_ChucNang(VaiTro_ChucNang instance);
     partial void UpdateVaiTro_ChucNang(VaiTro_ChucNang instance);
     partial void DeleteVaiTro_ChucNang(VaiTro_ChucNang instance);
+    partial void InsertLinhVuc(LinhVuc instance);
+    partial void UpdateLinhVuc(LinhVuc instance);
+    partial void DeleteLinhVuc(LinhVuc instance);
+    partial void InsertThongTin(ThongTin instance);
+    partial void UpdateThongTin(ThongTin instance);
+    partial void DeleteThongTin(ThongTin instance);
     #endregion
 		
 		public dbDataContext() : 
@@ -235,6 +241,22 @@ namespace DTO
 			get
 			{
 				return this.GetTable<VaiTro_ChucNang>();
+			}
+		}
+		
+		public System.Data.Linq.Table<LinhVuc> LinhVucs
+		{
+			get
+			{
+				return this.GetTable<LinhVuc>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ThongTin> ThongTins
+		{
+			get
+			{
+				return this.GetTable<ThongTin>();
 			}
 		}
 	}
@@ -4428,6 +4450,463 @@ namespace DTO
 						this._IdVaiTro = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("VaiTro");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.LinhVuc")]
+	public partial class LinhVuc : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _Id;
+		
+		private string _Ten;
+		
+		private string _MoTa;
+		
+		private EntitySet<ThongTin> _ThongTins;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(string value);
+    partial void OnIdChanged();
+    partial void OnTenChanging(string value);
+    partial void OnTenChanged();
+    partial void OnMoTaChanging(string value);
+    partial void OnMoTaChanged();
+    #endregion
+		
+		public LinhVuc()
+		{
+			this._ThongTins = new EntitySet<ThongTin>(new Action<ThongTin>(this.attach_ThongTins), new Action<ThongTin>(this.detach_ThongTins));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", DbType="NVarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ten", DbType="NVarChar(50)")]
+		public string Ten
+		{
+			get
+			{
+				return this._Ten;
+			}
+			set
+			{
+				if ((this._Ten != value))
+				{
+					this.OnTenChanging(value);
+					this.SendPropertyChanging();
+					this._Ten = value;
+					this.SendPropertyChanged("Ten");
+					this.OnTenChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MoTa", DbType="NVarChar(50)")]
+		public string MoTa
+		{
+			get
+			{
+				return this._MoTa;
+			}
+			set
+			{
+				if ((this._MoTa != value))
+				{
+					this.OnMoTaChanging(value);
+					this.SendPropertyChanging();
+					this._MoTa = value;
+					this.SendPropertyChanged("MoTa");
+					this.OnMoTaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LinhVuc_ThongTin", Storage="_ThongTins", ThisKey="Id", OtherKey="IdLinhVuc")]
+		public EntitySet<ThongTin> ThongTins
+		{
+			get
+			{
+				return this._ThongTins;
+			}
+			set
+			{
+				this._ThongTins.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_ThongTins(ThongTin entity)
+		{
+			this.SendPropertyChanging();
+			entity.LinhVuc = this;
+		}
+		
+		private void detach_ThongTins(ThongTin entity)
+		{
+			this.SendPropertyChanging();
+			entity.LinhVuc = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ThongTin")]
+	public partial class ThongTin : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private string _TenDonVi;
+		
+		private string _DiaChi;
+		
+		private string _DienThoai;
+		
+		private string _Fax;
+		
+		private string _Website;
+		
+		private string _Email;
+		
+		private string _IdLinhVuc;
+		
+		private System.Nullable<int> _MaSoThue;
+		
+		private System.Nullable<int> _GPKD;
+		
+		private EntityRef<LinhVuc> _LinhVuc;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnTenDonViChanging(string value);
+    partial void OnTenDonViChanged();
+    partial void OnDiaChiChanging(string value);
+    partial void OnDiaChiChanged();
+    partial void OnDienThoaiChanging(string value);
+    partial void OnDienThoaiChanged();
+    partial void OnFaxChanging(string value);
+    partial void OnFaxChanged();
+    partial void OnWebsiteChanging(string value);
+    partial void OnWebsiteChanged();
+    partial void OnEmailChanging(string value);
+    partial void OnEmailChanged();
+    partial void OnIdLinhVucChanging(string value);
+    partial void OnIdLinhVucChanged();
+    partial void OnMaSoThueChanging(System.Nullable<int> value);
+    partial void OnMaSoThueChanged();
+    partial void OnGPKDChanging(System.Nullable<int> value);
+    partial void OnGPKDChanged();
+    #endregion
+		
+		public ThongTin()
+		{
+			this._LinhVuc = default(EntityRef<LinhVuc>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenDonVi", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string TenDonVi
+		{
+			get
+			{
+				return this._TenDonVi;
+			}
+			set
+			{
+				if ((this._TenDonVi != value))
+				{
+					this.OnTenDonViChanging(value);
+					this.SendPropertyChanging();
+					this._TenDonVi = value;
+					this.SendPropertyChanged("TenDonVi");
+					this.OnTenDonViChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiaChi", DbType="NVarChar(50)")]
+		public string DiaChi
+		{
+			get
+			{
+				return this._DiaChi;
+			}
+			set
+			{
+				if ((this._DiaChi != value))
+				{
+					this.OnDiaChiChanging(value);
+					this.SendPropertyChanging();
+					this._DiaChi = value;
+					this.SendPropertyChanged("DiaChi");
+					this.OnDiaChiChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DienThoai", DbType="NVarChar(50)")]
+		public string DienThoai
+		{
+			get
+			{
+				return this._DienThoai;
+			}
+			set
+			{
+				if ((this._DienThoai != value))
+				{
+					this.OnDienThoaiChanging(value);
+					this.SendPropertyChanging();
+					this._DienThoai = value;
+					this.SendPropertyChanged("DienThoai");
+					this.OnDienThoaiChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Fax", DbType="NVarChar(50)")]
+		public string Fax
+		{
+			get
+			{
+				return this._Fax;
+			}
+			set
+			{
+				if ((this._Fax != value))
+				{
+					this.OnFaxChanging(value);
+					this.SendPropertyChanging();
+					this._Fax = value;
+					this.SendPropertyChanged("Fax");
+					this.OnFaxChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Website", DbType="NVarChar(50)")]
+		public string Website
+		{
+			get
+			{
+				return this._Website;
+			}
+			set
+			{
+				if ((this._Website != value))
+				{
+					this.OnWebsiteChanging(value);
+					this.SendPropertyChanging();
+					this._Website = value;
+					this.SendPropertyChanged("Website");
+					this.OnWebsiteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Email", DbType="NVarChar(50)")]
+		public string Email
+		{
+			get
+			{
+				return this._Email;
+			}
+			set
+			{
+				if ((this._Email != value))
+				{
+					this.OnEmailChanging(value);
+					this.SendPropertyChanging();
+					this._Email = value;
+					this.SendPropertyChanged("Email");
+					this.OnEmailChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdLinhVuc", DbType="NVarChar(50)")]
+		public string IdLinhVuc
+		{
+			get
+			{
+				return this._IdLinhVuc;
+			}
+			set
+			{
+				if ((this._IdLinhVuc != value))
+				{
+					if (this._LinhVuc.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnIdLinhVucChanging(value);
+					this.SendPropertyChanging();
+					this._IdLinhVuc = value;
+					this.SendPropertyChanged("IdLinhVuc");
+					this.OnIdLinhVucChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaSoThue", DbType="Int")]
+		public System.Nullable<int> MaSoThue
+		{
+			get
+			{
+				return this._MaSoThue;
+			}
+			set
+			{
+				if ((this._MaSoThue != value))
+				{
+					this.OnMaSoThueChanging(value);
+					this.SendPropertyChanging();
+					this._MaSoThue = value;
+					this.SendPropertyChanged("MaSoThue");
+					this.OnMaSoThueChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GPKD", DbType="Int")]
+		public System.Nullable<int> GPKD
+		{
+			get
+			{
+				return this._GPKD;
+			}
+			set
+			{
+				if ((this._GPKD != value))
+				{
+					this.OnGPKDChanging(value);
+					this.SendPropertyChanging();
+					this._GPKD = value;
+					this.SendPropertyChanged("GPKD");
+					this.OnGPKDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LinhVuc_ThongTin", Storage="_LinhVuc", ThisKey="IdLinhVuc", OtherKey="Id", IsForeignKey=true)]
+		public LinhVuc LinhVuc
+		{
+			get
+			{
+				return this._LinhVuc.Entity;
+			}
+			set
+			{
+				LinhVuc previousValue = this._LinhVuc.Entity;
+				if (((previousValue != value) 
+							|| (this._LinhVuc.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._LinhVuc.Entity = null;
+						previousValue.ThongTins.Remove(this);
+					}
+					this._LinhVuc.Entity = value;
+					if ((value != null))
+					{
+						value.ThongTins.Add(this);
+						this._IdLinhVuc = value.Id;
+					}
+					else
+					{
+						this._IdLinhVuc = default(string);
+					}
+					this.SendPropertyChanged("LinhVuc");
 				}
 			}
 		}

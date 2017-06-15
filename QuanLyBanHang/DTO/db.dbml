@@ -202,4 +202,27 @@
       <Association Name="VaiTro_VaiTro_ChucNang" Member="VaiTro" ThisKey="IdVaiTro" OtherKey="id" Type="VaiTro" IsForeignKey="true" />
     </Type>
   </Table>
+  <Table Name="dbo.LinhVuc" Member="LinhVucs">
+    <Type Name="LinhVuc">
+      <Column Name="Id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="LinhVuc_ThongTin" Member="ThongTins" ThisKey="Id" OtherKey="IdLinhVuc" Type="ThongTin" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ThongTin" Member="ThongTins">
+    <Type Name="ThongTin">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenDonVi" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DienThoai" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Website" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IdLinhVuc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MaSoThue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GPKD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="LinhVuc_ThongTin" Member="LinhVuc" ThisKey="IdLinhVuc" OtherKey="Id" Type="LinhVuc" IsForeignKey="true" />
+    </Type>
+  </Table>
 </Database>

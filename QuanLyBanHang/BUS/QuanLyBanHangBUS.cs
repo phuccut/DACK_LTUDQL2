@@ -23,5 +23,17 @@ namespace BUS
             else
                 return 0;
         }
+        public static ThongTin GetThongTin()
+        {
+            return DAO.QuanLyBanHangDAO.GetThongTin();
+        }
+        public static void UpdateThongTin(ThongTin tttemp)
+        {
+            DAO.QuanLyBanHangDAO.UpdateThongTin(tttemp);
+        }
+        public static List<LinhVuc> GetLinhVuc()
+        {
+            return DAO.QuanLyBanHangDAO.GetLinhVuc();
+        }
     }
 }

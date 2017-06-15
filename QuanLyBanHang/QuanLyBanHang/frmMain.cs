@@ -24,9 +24,27 @@ namespace QuanLyBanHang
             Id = id;
         }
 
+        private bool FormDaTonTai(Form f)
+        {
+            foreach(var frmChild in MdiChildren)
+            {
+                if (frmChild.Name == f.Name)
+                {
+                    frmChild.Activate();
+                    return true;
+                }
+            }
+            return false;
+        }
+
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             frmThongTin f = new frmThongTin();
+            f.Size = this.Size;
+            if (FormDaTonTai(f))
+            {
+                return;
+            }
             f.MdiParent = this;
             f.Show();
         }
