@@ -1,7 +1,7 @@
-F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\DAO\bin\Debug\DAO.dll
-F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\DAO\bin\Debug\DAO.pdb
-F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\DAO\bin\Debug\DTO.dll
-F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\DAO\bin\Debug\DTO.pdb
-F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
-F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\DAO\obj\Debug\DAO.dll
-F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\DAO\obj\Debug\DAO.pdb
+F:\Study\LTUDQL2\QuanLyBanHang\QuanLyBanHang\DAO\bin\Debug\DAO.dll
+F:\Study\LTUDQL2\QuanLyBanHang\QuanLyBanHang\DAO\bin\Debug\DAO.pdb
+F:\Study\LTUDQL2\QuanLyBanHang\QuanLyBanHang\DAO\bin\Debug\DTO.dll
+F:\Study\LTUDQL2\QuanLyBanHang\QuanLyBanHang\DAO\bin\Debug\DTO.pdb
+F:\Study\LTUDQL2\QuanLyBanHang\QuanLyBanHang\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+F:\Study\LTUDQL2\QuanLyBanHang\QuanLyBanHang\DAO\obj\Debug\DAO.dll
+F:\Study\LTUDQL2\QuanLyBanHang\QuanLyBanHang\DAO\obj\Debug\DAO.pdb

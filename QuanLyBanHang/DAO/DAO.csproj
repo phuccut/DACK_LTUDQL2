@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C52CB40D-A0B3-4232-8D09-CFB9EB3582D4}</ProjectGuid>
+    <ProjectGuid>{ACBC070A-374A-4B1A-BEDE-F23567A5009E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DAO</RootNamespace>
@@ -41,12 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TaiKhoanDAO.cs" />
+    <Compile Include="QuanLyBanHangDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">
-      <Project>{66d5d7f5-2b38-44a2-9fc9-e6e392f438de}</Project>
+      <Project>{b7878598-1128-49eb-ba3d-44a47fe64f47}</Project>
       <Name>DTO</Name>
     </ProjectReference>
   </ItemGroup>

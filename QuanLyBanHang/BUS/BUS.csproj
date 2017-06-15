@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{49D4C84A-9A86-4B7A-BBDB-0D89FEDBE522}</ProjectGuid>
+    <ProjectGuid>{18151C0C-CB43-4549-BC18-6FD596CC3882}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BUS</RootNamespace>
@@ -40,16 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="QuanLyBanHangBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TaiKhoanBUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAO\DAO.csproj">
-      <Project>{c52cb40d-a0b3-4232-8d09-cfb9eb3582d4}</Project>
+      <Project>{acbc070a-374a-4b1a-bede-f23567a5009e}</Project>
       <Name>DAO</Name>
     </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
-      <Project>{66d5d7f5-2b38-44a2-9fc9-e6e392f438de}</Project>
+      <Project>{b7878598-1128-49eb-ba3d-44a47fe64f47}</Project>
       <Name>DTO</Name>
     </ProjectReference>
   </ItemGroup>
