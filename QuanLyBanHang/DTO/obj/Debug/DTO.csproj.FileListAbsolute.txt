@@ -1,0 +1,6 @@
+F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\DTO\bin\Debug\DTO.dll.config
+F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\DTO\bin\Debug\DTO.dll
+F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\DTO\bin\Debug\DTO.pdb
+F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\DTO\obj\Debug\DTO.dll
+F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\DTO\obj\Debug\DTO.pdb

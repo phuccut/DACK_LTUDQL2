@@ -7,7 +7,7 @@
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol" xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon" xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars" x:Class="QuanLyBanHang.MainWindow"
         mc:Ignorable="d"
         Title="Quản lý bán hàng" Height="768" Width="1024"
-        WindowState="Maximized" Background="#FFECFBFF" WindowStartupLocation="CenterScreen">
+        Background="#FFECFBFF" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
     <Grid>
 
         <dxr:RibbonControl Height="151">
@@ -15,8 +15,8 @@
                 <dxr:RibbonPage Caption="Hệ thống">
                     <dxr:RibbonPageGroup Caption="Tài khoản">
                         <dxb:BarButtonItem Content="Thông tin" LargeGlyph="{dx:DXImage Image=BOCustomer_32x32.png}" Glyph="{dx:DXImage Image=BOCustomer_16x16.png}" RibbonStyle="Large"/>
-                        <dxb:BarButtonItem Content="Đổi mật khẩu" LargeGlyph="{dx:DXImage Image=BOPermission_32x32.png}" Glyph="{dx:DXImage Image=BOPermission_16x16.png}"/>
-                        <dxb:BarButtonItem Content="Thoát" LargeGlyph="{dx:DXImage Image=Error_32x32.png}" Glyph="{dx:DXImage Image=Error_16x16.png}"/>
+                        <dxb:BarButtonItem Content="Đổi mật khẩu" LargeGlyph="{dx:DXImage Image=BOPermission_32x32.png}" Glyph="{dx:DXImage Image=BOPermission_16x16.png}" ItemClick="btnDoiMatKhau_ItemClick"/>
+                        <dxb:BarButtonItem Content="Thoát" LargeGlyph="{dx:DXImage Image=Error_32x32.png}" Glyph="{dx:DXImage Image=Error_16x16.png}" ItemClick="btnThoat_ItemClick"/>
                     </dxr:RibbonPageGroup>
                     <dxr:RibbonPageGroup Caption="Bảo mật">
                         <dxb:BarButtonItem Content="Nhật ký hệ thống" Glyph="{dx:DXImage Image=BOReport_32x32.png}" LargeGlyph="{dx:DXImage Image=BOReport_32x32.png}"/>

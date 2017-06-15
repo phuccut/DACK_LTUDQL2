@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BUS;
 
 namespace QuanLyBanHang
 {
@@ -51,9 +52,7 @@ namespace QuanLyBanHang
         private void btnDangNhap_Click(object sender, RoutedEventArgs e)
         {
             String ps = GetMD5(txtPassword.Password);
-            var check = (from TaiKhoan in db.TaiKhoans
-                         where TaiKhoan.TenTaiKhoan == txtUsername.Text.Trim() && TaiKhoan.MatKhau == ps
-                         select TaiKhoan).SingleOrDefault();
+            var check = BUS.TaiKhoanBUS.DangNhap(txtUsername.Text.Trim(), ps);
             if (check == null)
             {
                 MessageBox.Show("Đăng nhập thất bại ",ps);
@@ -61,7 +60,7 @@ namespace QuanLyBanHang
             else
             {
                 MessageBox.Show("Đăng nhập thành công");
-                MainWindow frm = new MainWindow();
+                MainWindow frm = new MainWindow(check.Id);
                 frm.Show();
                 this.Close();
             }
