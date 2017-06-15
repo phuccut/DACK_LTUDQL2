@@ -86,5 +86,41 @@ namespace BUS
         {
             DAO.QuanLyBanHangDAO.XoaKhoHang(id);
         }
+        //ĐƠN VỊ TÍNH
+        public static List<DonViTinh> GetDonViTinh()
+        {
+            return DAO.QuanLyBanHangDAO.GetDonViTinh();
+        }
+        public static void ThemDonViTinh(DonViTinh kh)
+        {
+            DAO.QuanLyBanHangDAO.ThemDonViTinh(kh);
+        }
+        public static void SuaDonViTinh(DonViTinh kh)
+        {
+            DAO.QuanLyBanHangDAO.SuaDonViTinh(kh);
+        }
+        public static void XoaDonViTinh(String id)
+        {
+            DAO.QuanLyBanHangDAO.XoaDonViTinh(id);
+        }
+
+        //NHÀ CUNG CẤP
+
+        public static List<NhaCungCap> GetNhaCungCap()
+        {
+            return DAO.QuanLyBanHangDAO.GetNhaCungCap();
+        }
+        public static void ThemNhaCungCap(NhaCungCap kh)
+        {
+            DAO.QuanLyBanHangDAO.ThemNhaCungCap(kh);
+        }
+        public static void SuaNhaCungCap(NhaCungCap kh)
+        {
+            DAO.QuanLyBanHangDAO.SuaNhaCungCap(kh);
+        }
+        public static void XoaNhaCungCap(String id)
+        {
+            DAO.QuanLyBanHangDAO.XoaNhaCungCap(id);
+        }
     }
 }

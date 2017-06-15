@@ -187,5 +187,67 @@ namespace DAO
             db.KhoHangs.DeleteOnSubmit(khohang);
             db.SubmitChanges();
         }
+        //ĐƠN VỊ TÍNH
+        public static List<DonViTinh> GetDonViTinh()
+        {
+            dbDataContext db = new dbDataContext();
+            var check = (from DonViTinh in db.DonViTinhs select DonViTinh);
+            if (check != null)
+            {
+                List<DonViTinh> lst = check.ToList();
+                return lst;
+            }
+            else return null;
+        }
+        public static void ThemDonViTinh(DonViTinh kh)
+        {
+            dbDataContext db = new dbDataContext();
+            db.DonViTinhs.InsertOnSubmit(kh);
+            db.SubmitChanges();
+        }
+        public static void SuaDonViTinh(DonViTinh kh)
+        {
+            dbDataContext db = new dbDataContext();
+            DonViTinh donvitinh = db.DonViTinhs.Single(DonViTinh => DonViTinh.Id == kh.Id);
+            db.SubmitChanges();
+        }
+        public static void XoaDonViTinh(String id)
+        {
+            dbDataContext db = new dbDataContext();
+            DonViTinh donvitinh = db.DonViTinhs.Single(DonViTinh => DonViTinh.Id == id);
+            db.DonViTinhs.DeleteOnSubmit(donvitinh);
+            db.SubmitChanges();
+        }
+        //NHÀ CUNG CẤP
+        public static List<NhaCungCap> GetNhaCungCap()
+        {
+            dbDataContext db = new dbDataContext();
+            var check = (from NhaCungCap in db.NhaCungCaps select NhaCungCap);
+            if (check != null)
+            {
+                List<NhaCungCap> lst = check.ToList();
+                return lst;
+            }
+            else return null;
+        }
+        public static void ThemNhaCungCap(NhaCungCap kh)
+        {
+            dbDataContext db = new dbDataContext();
+            db.NhaCungCaps.InsertOnSubmit(kh);
+            db.SubmitChanges();
+        }
+        public static void SuaNhaCungCap(NhaCungCap kh)
+        {
+            dbDataContext db = new dbDataContext();
+            NhaCungCap nhacungcap = db.NhaCungCaps.Single(NhaCungCap => NhaCungCap.Id == kh.Id);
+            db.SubmitChanges();
+        }
+        public static void XoaNhaCungCap(String id)
+        {
+            dbDataContext db = new dbDataContext();
+            NhaCungCap nhacungcap = db.NhaCungCaps.Single(NhaCungCap => NhaCungCap.Id == id);
+            db.NhaCungCaps.DeleteOnSubmit(nhacungcap);
+            db.SubmitChanges();
+        }
     }
 }

@@ -108,5 +108,29 @@ namespace QuanLyBanHang
             f.MdiParent = this;
             f.Show();
         }
+
+        private void btnDonViTinh_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmDonViTinh f = new frmDonViTinh();
+            f.Size = this.Size;
+            if (FormDaTonTai(f))
+            {
+                return;
+            }
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void btnNhaCungCap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmNhaCungCap f = new frmNhaCungCap();
+            f.Size = this.Size;
+            if (FormDaTonTai(f))
+            {
+                return;
+            }
+            f.MdiParent = this;
+            f.Show();
+        }
     }
 }

@@ -40,9 +40,9 @@
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.btnKhuVuc = new DevExpress.XtraBars.BarButtonItem();
             this.btnKhachHang = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnNhaCungCap = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDonViTinh = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.btnKhoHang = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
@@ -92,9 +92,9 @@
             this.barButtonItem7,
             this.btnKhuVuc,
             this.btnKhachHang,
-            this.barButtonItem10,
+            this.btnNhaCungCap,
             this.barButtonItem11,
-            this.barButtonItem12,
+            this.btnDonViTinh,
             this.barButtonItem13,
             this.btnKhoHang,
             this.barButtonItem15,
@@ -115,7 +115,7 @@
             this.ribbonPage1,
             this.ribbonPage2,
             this.ribbonPage3});
-            this.ribbonControl1.Size = new System.Drawing.Size(1008, 139);
+            this.ribbonControl1.Size = new System.Drawing.Size(1008, 142);
             // 
             // barButtonItem1
             // 
@@ -185,12 +185,13 @@
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKhachHang_ItemClick);
             // 
-            // barButtonItem10
+            // btnNhaCungCap
             // 
-            this.barButtonItem10.Caption = "Nhà cung cấp";
-            this.barButtonItem10.Id = 10;
-            this.barButtonItem10.ImageOptions.LargeImageIndex = 11;
-            this.barButtonItem10.Name = "barButtonItem10";
+            this.btnNhaCungCap.Caption = "Nhà cung cấp";
+            this.btnNhaCungCap.Id = 10;
+            this.btnNhaCungCap.ImageOptions.LargeImageIndex = 11;
+            this.btnNhaCungCap.Name = "btnNhaCungCap";
+            this.btnNhaCungCap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNhaCungCap_ItemClick);
             // 
             // barButtonItem11
             // 
@@ -199,12 +200,13 @@
             this.barButtonItem11.ImageOptions.LargeImageIndex = 6;
             this.barButtonItem11.Name = "barButtonItem11";
             // 
-            // barButtonItem12
+            // btnDonViTinh
             // 
-            this.barButtonItem12.Caption = "Đơn vị tính";
-            this.barButtonItem12.Id = 12;
-            this.barButtonItem12.ImageOptions.LargeImageIndex = 5;
-            this.barButtonItem12.Name = "barButtonItem12";
+            this.btnDonViTinh.Caption = "Đơn vị tính";
+            this.btnDonViTinh.Id = 12;
+            this.btnDonViTinh.ImageOptions.LargeImageIndex = 5;
+            this.btnDonViTinh.Name = "btnDonViTinh";
+            this.btnDonViTinh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDonViTinh_ItemClick);
             // 
             // barButtonItem13
             // 
@@ -364,14 +366,14 @@
             // 
             this.ribbonPageGroup2.ItemLinks.Add(this.btnKhuVuc, true);
             this.ribbonPageGroup2.ItemLinks.Add(this.btnKhachHang, true);
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem10, true);
+            this.ribbonPageGroup2.ItemLinks.Add(this.btnNhaCungCap, true);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Đối tác";
             // 
             // ribbonPageGroup5
             // 
             this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem11, true);
-            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem12, true);
+            this.ribbonPageGroup5.ItemLinks.Add(this.btnDonViTinh, true);
             this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem13, true);
             this.ribbonPageGroup5.ItemLinks.Add(this.btnKhoHang, true);
             this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem15, true);
@@ -436,7 +438,7 @@
             // 
             // defaultLookAndFeel1
             // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2016 Colorful";
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Blue";
             // 
             // frmMain
             // 
@@ -476,9 +478,9 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.BarButtonItem btnKhuVuc;
         private DevExpress.XtraBars.BarButtonItem btnKhachHang;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem10;
+        private DevExpress.XtraBars.BarButtonItem btnNhaCungCap;
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
+        private DevExpress.XtraBars.BarButtonItem btnDonViTinh;
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
         private DevExpress.XtraBars.BarButtonItem btnKhoHang;
         private DevExpress.XtraBars.BarButtonItem barButtonItem15;
