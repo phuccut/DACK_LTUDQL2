@@ -112,5 +112,80 @@ namespace DAO
             db.SubmitChanges();
         }
 
+        //KHÁCH HÀNG
+        public static List<KhachHang> GetKhachHang()
+        {
+            dbDataContext db = new dbDataContext();
+            var check = (from KhachHang in db.KhachHangs select KhachHang);
+            if (check != null)
+            {
+                List<KhachHang> lst = check.ToList();
+                return lst;
+            }
+            else return null;
+        }
+        public static void ThemKhachHang(KhachHang kh)
+        {
+            dbDataContext db = new dbDataContext();
+            db.KhachHangs.InsertOnSubmit(kh);
+            db.SubmitChanges();
+        }
+        public static void SuaKhachHang(KhachHang kh)
+        {
+            dbDataContext db = new dbDataContext();
+            KhachHang khachhang = db.KhachHangs.Single(KhachHang => KhachHang.Id == kh.Id);
+            khachhang.Id = kh.Id;
+            khachhang.IdKhuVuc = kh.IdKhuVuc;
+            khachhang.Ten = kh.Ten;
+            khachhang.DiaChi = kh.DiaChi;
+            khachhang.DiDong = kh.DiDong;
+            khachhang.DienThoai = kh.DienThoai;
+            khachhang.Website = kh.Website;
+            khachhang.MaSoThue = kh.MaSoThue;
+            khachhang.SoTaiKhoan = kh.SoTaiKhoan;
+            khachhang.Fax = kh.Fax;
+            khachhang.TenNganHang = kh.TenNganHang;
+            khachhang.QuanLy = kh.QuanLy;
+            khachhang.LienHe = kh.LienHe;
+            db.SubmitChanges();
+        }
+        public static void XoaKhachHang(String id)
+        {
+            dbDataContext db = new dbDataContext();
+            KhachHang khachhang = db.KhachHangs.Single(KhachHang => KhachHang.Id == id);
+            db.KhachHangs.DeleteOnSubmit(khachhang);
+            db.SubmitChanges();
+        }
+        //KHO HÀNG
+        public static List<KhoHang> GetKhoHang()
+        {
+            dbDataContext db = new dbDataContext();
+            var check = (from KhoHang in db.KhoHangs select KhoHang);
+            if (check != null)
+            {
+                List<KhoHang> lst = check.ToList();
+                return lst;
+            }
+            else return null;
+        }
+        public static void ThemKhoHang(KhoHang kh)
+        {
+            dbDataContext db = new dbDataContext();
+            db.KhoHangs.InsertOnSubmit(kh);
+            db.SubmitChanges();
+        }
+        public static void SuaKhoHang(KhoHang kh)
+        {
+            dbDataContext db = new dbDataContext();
+            KhoHang khohang = db.KhoHangs.Single(KhoHang => KhoHang.Id == kh.Id);
+            db.SubmitChanges();
+        }
+        public static void XoaKhoHang(String id)
+        {
+            dbDataContext db = new dbDataContext();
+            KhoHang khohang = db.KhoHangs.Single(KhoHang => KhoHang.Id == id);
+            db.KhoHangs.DeleteOnSubmit(khohang);
+            db.SubmitChanges();
+        }
     }
 }

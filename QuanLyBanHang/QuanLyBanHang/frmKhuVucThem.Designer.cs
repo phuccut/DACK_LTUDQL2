@@ -114,7 +114,7 @@
             this.btnLuu.Size = new System.Drawing.Size(95, 38);
             this.btnLuu.StyleController = this.layoutControl1;
             this.btnLuu.TabIndex = 9;
-            this.btnLuu.Text = "Lưu ";
+            this.btnLuu.Text = "Thêm";
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // cQuanLy

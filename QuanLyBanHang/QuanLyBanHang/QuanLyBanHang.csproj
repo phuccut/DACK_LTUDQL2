@@ -71,6 +71,30 @@
     <Compile Include="frmDoiMatKhau.Designer.cs">
       <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhachHang.Designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhachHangSua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhachHangSua.Designer.cs">
+      <DependentUpon>frmKhachHangSua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhachHangThem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhachHangThem.Designer.cs">
+      <DependentUpon>frmKhachHangThem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhoHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhoHang.Designer.cs">
+      <DependentUpon>frmKhoHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmKhuVuc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +135,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmDoiMatKhau.resx">
       <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhachHangSua.resx">
+      <DependentUpon>frmKhachHangSua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhachHangThem.resx">
+      <DependentUpon>frmKhachHangThem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhoHang.resx">
+      <DependentUpon>frmKhoHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKhuVuc.resx">
       <DependentUpon>frmKhuVuc.cs</DependentUpon>

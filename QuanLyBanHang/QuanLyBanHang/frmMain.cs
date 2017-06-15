@@ -75,7 +75,31 @@ namespace QuanLyBanHang
 
         private void btnKhuVuc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            frmKhuVuc f = new frmKhuVuc();
+            frmKhoHang f = new frmKhoHang();
+            f.Size = this.Size;
+            if (FormDaTonTai(f))
+            {
+                return;
+            }
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void btnKhachHang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmKhachHang f = new frmKhachHang();
+            f.Size = this.Size;
+            if (FormDaTonTai(f))
+            {
+                return;
+            }
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void btnKhoHang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmKhoHang f = new frmKhoHang();
             f.Size = this.Size;
             if (FormDaTonTai(f))
             {

@@ -199,3 +199,7 @@ F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHan
 F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmKhuVuc.resources
 F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmKhuVucThem.resources
 F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmKhuVucSua.resources
+F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmKhachHang.resources
+F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmKhachHangSua.resources
+F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmKhachHangThem.resources
+F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmKhoHang.resources
