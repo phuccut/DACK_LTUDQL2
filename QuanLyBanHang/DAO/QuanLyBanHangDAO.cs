@@ -76,5 +76,41 @@ namespace DAO
             else return null;
         }
 
+        // KHU VỰC
+
+        public static List<KhuVuc> GetKhuVuc()
+        {
+            dbDataContext db = new dbDataContext();
+            var check = (from KhuVuc in db.KhuVucs select KhuVuc);
+            if (check != null)
+            {
+                List<KhuVuc> lst = check.ToList();
+                return lst;
+            }
+            else return null;
+        }
+        public static void ThemKhuVuc(KhuVuc kv)
+        {
+            dbDataContext db = new dbDataContext();
+            db.KhuVucs.InsertOnSubmit(kv);
+            db.SubmitChanges();
+        }
+        public static void SuaKhuVuc(KhuVuc kv)
+        {
+            dbDataContext db = new dbDataContext();
+            KhuVuc khuvuc = db.KhuVucs.Single(KhuVuc => KhuVuc.Id == kv.Id);
+            khuvuc.Ten = kv.Ten;
+            khuvuc.MoTa = kv.MoTa;
+            khuvuc.QuanLy = kv.QuanLy;
+            db.SubmitChanges();
+        }
+        public static void XoaKhuVuc(String id)
+        {
+            dbDataContext db = new dbDataContext();
+            KhuVuc khuvuc = db.KhuVucs.Single(KhuVuc => KhuVuc.Id == id);
+            db.KhuVucs.DeleteOnSubmit(khuvuc);
+            db.SubmitChanges();
+        }
+
     }
 }

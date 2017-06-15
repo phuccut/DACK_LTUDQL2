@@ -72,5 +72,17 @@ namespace QuanLyBanHang
         {
             this.Close();
         }
+
+        private void btnKhuVuc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmKhuVuc f = new frmKhuVuc();
+            f.Size = this.Size;
+            if (FormDaTonTai(f))
+            {
+                return;
+            }
+            f.MdiParent = this;
+            f.Show();
+        }
     }
 }

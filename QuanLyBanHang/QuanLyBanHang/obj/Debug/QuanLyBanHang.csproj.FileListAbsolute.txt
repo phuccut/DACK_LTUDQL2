@@ -196,3 +196,6 @@ F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHan
 F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
 F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.Cache
 F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe.licenses
+F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmKhuVuc.resources
+F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmKhuVucThem.resources
+F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmKhuVucSua.resources

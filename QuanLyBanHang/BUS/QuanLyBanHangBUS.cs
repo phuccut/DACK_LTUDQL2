@@ -35,5 +35,22 @@ namespace BUS
         {
             return DAO.QuanLyBanHangDAO.GetLinhVuc();
         }
+        //KHU VỰC
+        public static List<KhuVuc> GetKhuVuc()
+        {
+            return DAO.QuanLyBanHangDAO.GetKhuVuc();
+        }
+        public static void ThemKhuVuc(KhuVuc kv)
+        {
+            DAO.QuanLyBanHangDAO.ThemKhuVuc(kv);
+        }
+        public static void SuaKhuVuc(KhuVuc kv)
+        {
+            DAO.QuanLyBanHangDAO.SuaKhuVuc(kv);
+        }
+        public static void XoaKhuVuc(String id)
+        {
+            DAO.QuanLyBanHangDAO.XoaKhuVuc(id);
+        }
     }
 }

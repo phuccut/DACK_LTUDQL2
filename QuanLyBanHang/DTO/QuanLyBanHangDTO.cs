@@ -25,5 +25,12 @@ namespace DTO
             public string Id { get; set; }
             public string Ten { get; set; }
         }
+        public class KhuVuc
+        {
+            public string Id { get; set; }
+            public string Ten { get; set; }
+            public string MoTa { get; set; }
+            public bool QuanLy { get; set; }
+        }
     }
 }

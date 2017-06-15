@@ -71,6 +71,24 @@
     <Compile Include="frmDoiMatKhau.Designer.cs">
       <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmKhuVuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhuVuc.Designer.cs">
+      <DependentUpon>frmKhuVuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhuVucSua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhuVucSua.Designer.cs">
+      <DependentUpon>frmKhuVucSua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhuVucThem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhuVucThem.Designer.cs">
+      <DependentUpon>frmKhuVucThem.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +112,15 @@
     <EmbeddedResource Include="frmDoiMatKhau.resx">
       <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmKhuVuc.resx">
+      <DependentUpon>frmKhuVuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhuVucSua.resx">
+      <DependentUpon>frmKhuVucSua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhuVucThem.resx">
+      <DependentUpon>frmKhuVucThem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +140,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

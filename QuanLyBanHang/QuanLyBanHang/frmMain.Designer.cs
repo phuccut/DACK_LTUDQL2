@@ -38,7 +38,7 @@
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnKhuVuc = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
@@ -90,7 +90,7 @@
             this.barButtonItem5,
             this.barButtonItem6,
             this.barButtonItem7,
-            this.barButtonItem8,
+            this.btnKhuVuc,
             this.barButtonItem9,
             this.barButtonItem10,
             this.barButtonItem11,
@@ -169,12 +169,13 @@
             this.barButtonItem7.ImageOptions.LargeImageIndex = 16;
             this.barButtonItem7.Name = "barButtonItem7";
             // 
-            // barButtonItem8
+            // btnKhuVuc
             // 
-            this.barButtonItem8.Caption = "Khu vực";
-            this.barButtonItem8.Id = 8;
-            this.barButtonItem8.ImageOptions.LargeImageIndex = 9;
-            this.barButtonItem8.Name = "barButtonItem8";
+            this.btnKhuVuc.Caption = "Khu vực";
+            this.btnKhuVuc.Id = 8;
+            this.btnKhuVuc.ImageOptions.LargeImageIndex = 9;
+            this.btnKhuVuc.Name = "btnKhuVuc";
+            this.btnKhuVuc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKhuVuc_ItemClick);
             // 
             // barButtonItem9
             // 
@@ -359,7 +360,7 @@
             // 
             // ribbonPageGroup2
             // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem8, true);
+            this.ribbonPageGroup2.ItemLinks.Add(this.btnKhuVuc, true);
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem9, true);
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem10, true);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
@@ -471,7 +472,7 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
+        private DevExpress.XtraBars.BarButtonItem btnKhuVuc;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;
