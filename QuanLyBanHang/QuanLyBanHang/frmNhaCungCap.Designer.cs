@@ -36,11 +36,11 @@
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btnSua = new DevExpress.XtraEditors.SimpleButton();
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
@@ -149,6 +149,16 @@
             this.gridColumn4.VisibleIndex = 3;
             this.gridColumn4.Width = 108;
             // 
+            // gridColumn9
+            // 
+            this.gridColumn9.Caption = "Chức vụ";
+            this.gridColumn9.FieldName = "ChucVu";
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.OptionsColumn.ReadOnly = true;
+            this.gridColumn9.Visible = true;
+            this.gridColumn9.VisibleIndex = 8;
+            this.gridColumn9.Width = 60;
+            // 
             // gridColumn5
             // 
             this.gridColumn5.Caption = "Địa chỉ";
@@ -188,16 +198,6 @@
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 7;
             this.gridColumn8.Width = 85;
-            // 
-            // gridColumn9
-            // 
-            this.gridColumn9.Caption = "Chức vụ";
-            this.gridColumn9.FieldName = "ChucVu";
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.OptionsColumn.ReadOnly = true;
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 8;
-            this.gridColumn9.Width = 60;
             // 
             // gridColumn13
             // 
@@ -324,7 +324,7 @@
             // 
             // defaultLookAndFeel1
             // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Blue";
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2016 Colorful";
             // 
             // frmNhaCungCap
             // 

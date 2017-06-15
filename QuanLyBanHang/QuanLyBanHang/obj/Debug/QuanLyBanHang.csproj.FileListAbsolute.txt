@@ -205,3 +205,4 @@ F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHan
 F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmKhoHang.resources
 F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmDonViTinh.resources
 F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmNhaCungCap.resources
+F:\Study\LTUDQL2\DACK_LTUDQL2\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmTyGia.resources

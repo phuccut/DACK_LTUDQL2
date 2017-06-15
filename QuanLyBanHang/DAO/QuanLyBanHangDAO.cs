@@ -249,5 +249,37 @@ namespace DAO
             db.NhaCungCaps.DeleteOnSubmit(nhacungcap);
             db.SubmitChanges();
         }
+
+        //TỶ GIÁ
+        public static List<TyGia> GetTyGia()
+        {
+            dbDataContext db = new dbDataContext();
+            var check = (from TyGia in db.TyGias select TyGia);
+            if (check != null)
+            {
+                List<TyGia> lst = check.ToList();
+                return lst;
+            }
+            else return null;
+        }
+        public static void ThemTyGia(TyGia kh)
+        {
+            dbDataContext db = new dbDataContext();
+            db.TyGias.InsertOnSubmit(kh);
+            db.SubmitChanges();
+        }
+        public static void SuaTyGia(TyGia kh)
+        {
+            dbDataContext db = new dbDataContext();
+            TyGia tygia = db.TyGias.Single(TyGia => TyGia.Id == kh.Id);
+            db.SubmitChanges();
+        }
+        public static void XoaTyGia(String id)
+        {
+            dbDataContext db = new dbDataContext();
+            TyGia tygia = db.TyGias.Single(TyGia => TyGia.Id == id);
+            db.TyGias.DeleteOnSubmit(tygia);
+            db.SubmitChanges();
+        }
     }
 }

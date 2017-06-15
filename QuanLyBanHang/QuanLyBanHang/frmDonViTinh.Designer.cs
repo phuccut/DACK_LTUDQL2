@@ -251,7 +251,7 @@
             // 
             // defaultLookAndFeel1
             // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Blue";
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2016 Colorful";
             // 
             // frmDonViTinh
             // 

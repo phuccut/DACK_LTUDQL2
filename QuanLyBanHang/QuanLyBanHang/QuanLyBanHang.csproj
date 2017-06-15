@@ -71,6 +71,12 @@
     <Compile Include="frmDoiMatKhau.Designer.cs">
       <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTyGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTyGia.Designer.cs">
+      <DependentUpon>frmTyGia.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNhaCungCap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmDoiMatKhau.resx">
       <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTyGia.resx">
+      <DependentUpon>frmTyGia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNhaCungCap.resx">
       <DependentUpon>frmNhaCungCap.cs</DependentUpon>

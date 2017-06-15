@@ -45,7 +45,7 @@
             this.btnDonViTinh = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.btnKhoHang = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnTyGia = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
@@ -97,7 +97,7 @@
             this.btnDonViTinh,
             this.barButtonItem13,
             this.btnKhoHang,
-            this.barButtonItem15,
+            this.btnTyGia,
             this.barButtonItem16,
             this.barButtonItem17,
             this.barButtonItem18,
@@ -115,7 +115,7 @@
             this.ribbonPage1,
             this.ribbonPage2,
             this.ribbonPage3});
-            this.ribbonControl1.Size = new System.Drawing.Size(1008, 142);
+            this.ribbonControl1.Size = new System.Drawing.Size(1008, 139);
             // 
             // barButtonItem1
             // 
@@ -223,12 +223,13 @@
             this.btnKhoHang.Name = "btnKhoHang";
             this.btnKhoHang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKhoHang_ItemClick);
             // 
-            // barButtonItem15
+            // btnTyGia
             // 
-            this.barButtonItem15.Caption = "Tỉ giá";
-            this.barButtonItem15.Id = 15;
-            this.barButtonItem15.ImageOptions.LargeImageIndex = 19;
-            this.barButtonItem15.Name = "barButtonItem15";
+            this.btnTyGia.Caption = "Tỉ giá";
+            this.btnTyGia.Id = 15;
+            this.btnTyGia.ImageOptions.LargeImageIndex = 19;
+            this.btnTyGia.Name = "btnTyGia";
+            this.btnTyGia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTyGia_ItemClick);
             // 
             // barButtonItem16
             // 
@@ -376,7 +377,7 @@
             this.ribbonPageGroup5.ItemLinks.Add(this.btnDonViTinh, true);
             this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem13, true);
             this.ribbonPageGroup5.ItemLinks.Add(this.btnKhoHang, true);
-            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem15, true);
+            this.ribbonPageGroup5.ItemLinks.Add(this.btnTyGia, true);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Text = "Kho hàng";
             // 
@@ -483,7 +484,7 @@
         private DevExpress.XtraBars.BarButtonItem btnDonViTinh;
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
         private DevExpress.XtraBars.BarButtonItem btnKhoHang;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem15;
+        private DevExpress.XtraBars.BarButtonItem btnTyGia;
         private DevExpress.XtraBars.BarButtonItem barButtonItem16;
         private DevExpress.XtraBars.BarButtonItem barButtonItem17;
         private DevExpress.XtraBars.BarButtonItem barButtonItem18;

@@ -122,5 +122,23 @@ namespace BUS
         {
             DAO.QuanLyBanHangDAO.XoaNhaCungCap(id);
         }
+
+        //TỶ GIÁ
+        public static List<TyGia> GetTyGia()
+        {
+            return DAO.QuanLyBanHangDAO.GetTyGia();
+        }
+        public static void ThemTyGia(TyGia kh)
+        {
+            DAO.QuanLyBanHangDAO.ThemTyGia(kh);
+        }
+        public static void SuaTyGia(TyGia kh)
+        {
+            DAO.QuanLyBanHangDAO.SuaTyGia(kh);
+        }
+        public static void XoaTyGia(String id)
+        {
+            DAO.QuanLyBanHangDAO.XoaTyGia(id);
+        }
     }
 }

@@ -132,5 +132,17 @@ namespace QuanLyBanHang
             f.MdiParent = this;
             f.Show();
         }
+
+        private void btnTyGia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmTyGia f = new frmTyGia();
+            f.Size = this.Size;
+            if (FormDaTonTai(f))
+            {
+                return;
+            }
+            f.MdiParent = this;
+            f.Show();
+        }
     }
 }

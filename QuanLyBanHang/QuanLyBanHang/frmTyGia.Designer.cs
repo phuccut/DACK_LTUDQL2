@@ -1,6 +1,6 @@
 ﻿namespace QuanLyBanHang
 {
-    partial class frmKhuVuc
+    partial class frmTyGia
     {
         /// <summary>
         /// Required designer variable.
@@ -253,7 +253,7 @@
             // 
             this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2016 Colorful";
             // 
-            // frmKhuVuc
+            // frmTyGia
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
@@ -261,9 +261,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1149, 652);
             this.Controls.Add(this.layoutControl1);
-            this.Name = "frmKhuVuc";
+            this.Name = "frmTyGia";
             this.Text = "Quản lý khu vực";
-            this.Load += new System.EventHandler(this.frmKhuVuc_Load);
+            this.Load += new System.EventHandler(this.frmTyGia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gcDuLieu)).EndInit();
